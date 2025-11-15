@@ -1,6 +1,5 @@
-
 // simple redis client wrapper
-import Redis from 'ioredis';
+const Redis = require('ioredis');
 require('dotenv').config();
 
 const host = process.env.REDIS_HOST || 'localhost';
