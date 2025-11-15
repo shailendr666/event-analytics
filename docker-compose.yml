@@ -21,7 +21,7 @@ services:
   ingestion:
     build:
       context: ./ingestion-service
-      dockerfile: Dockerfile
+      dockerfile: DockerFile
     env_file:
       - .env
     environment:
@@ -37,7 +37,7 @@ services:
   processor:
     build:
       context: ./processor-service
-      dockerfile: Dockerfile
+      dockerfile: DockerFile
     env_file:
       - .env
     environment:
@@ -55,7 +55,7 @@ services:
   reporting:
     build:
       context: ./reporting-service
-      dockerfile: Dockerfile
+      dockerfile: DockerFile
     env_file:
       - .env
     environment:
